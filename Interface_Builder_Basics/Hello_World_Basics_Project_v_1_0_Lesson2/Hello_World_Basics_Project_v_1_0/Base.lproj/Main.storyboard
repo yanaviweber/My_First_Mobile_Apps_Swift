@@ -17,34 +17,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlb-py-jnt">
-                                <rect key="frame" x="20" y="760" width="140" height="102"/>
+                                <rect key="frame" x="45" y="760" width="140" height="102"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="3vx-7a-9KF"/>
-                                    <constraint firstAttribute="height" constant="102" id="vyP-gd-9eu"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="TYb-GL-hXV"/>
+                                    <constraint firstAttribute="height" constant="102" id="g19-CE-lGF"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erB-Rl-rzQ">
-                                <rect key="frame" x="254" y="44" width="140" height="102"/>
+                                <rect key="frame" x="229" y="760" width="140" height="102"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="3pf-i0-OvL"/>
-                                    <constraint firstAttribute="height" constant="102" id="6kt-0H-tOP"/>
-                                </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="erB-Rl-rzQ" secondAttribute="trailing" constant="20" id="0d4-k2-2XH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qlb-py-jnt" secondAttribute="trailing" constant="150" id="145-mb-a3S"/>
-                            <constraint firstItem="qlb-py-jnt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6a1-9h-x9e"/>
-                            <constraint firstItem="qlb-py-jnt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9AV-AT-cvw"/>
-                            <constraint firstItem="erB-Rl-rzQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="SXP-1U-geC"/>
-                            <constraint firstItem="qlb-py-jnt" firstAttribute="top" relation="lessThanOrEqual" secondItem="erB-Rl-rzQ" secondAttribute="bottom" constant="614" id="ez6-XD-a4i"/>
-                            <constraint firstItem="erB-Rl-rzQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qjA-wa-Hvl"/>
+                            <constraint firstItem="erB-Rl-rzQ" firstAttribute="width" secondItem="qlb-py-jnt" secondAttribute="width" id="54E-Hx-fLy"/>
+                            <constraint firstItem="qlb-py-jnt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="5le-ds-blk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qlb-py-jnt" secondAttribute="bottom" id="Fke-P6-7Am"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="erB-Rl-rzQ" secondAttribute="trailing" constant="45" id="YSq-F9-baf"/>
+                            <constraint firstItem="erB-Rl-rzQ" firstAttribute="leading" secondItem="qlb-py-jnt" secondAttribute="trailing" constant="44" id="cDe-63-zXw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="erB-Rl-rzQ" secondAttribute="bottom" id="eMU-bj-opH"/>
+                            <constraint firstItem="erB-Rl-rzQ" firstAttribute="height" secondItem="qlb-py-jnt" secondAttribute="height" id="xMF-k5-1uJ"/>
                         </constraints>
                     </view>
                 </viewController>
