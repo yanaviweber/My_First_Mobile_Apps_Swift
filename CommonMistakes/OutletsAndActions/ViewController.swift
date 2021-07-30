@@ -11,9 +11,6 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
     
-    
-    @IBOutlet var labelCollection: [UILabel]!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -25,5 +22,7 @@ class ViewController: UIViewController {
         label.text = "Hello Label"
     }
     
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        print(#function)
+    }
 }
-
