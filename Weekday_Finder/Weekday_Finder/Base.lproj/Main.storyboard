@@ -76,11 +76,20 @@
                                 <state key="normal" title="Find day">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="findDay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rce-Zc-V5P"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                     </view>
+                    <connections>
+                        <outlet property="dateTF" destination="353-2G-Seq" id="NDJ-l9-VVK"/>
+                        <outlet property="monthTF" destination="3bS-Pv-p4B" id="gVP-D1-H17"/>
+                        <outlet property="resultLabel" destination="PzC-q2-toh" id="csG-1g-AdC"/>
+                        <outlet property="yearTF" destination="MhG-Hx-RpD" id="Kmp-Uj-f60"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
