@@ -28,12 +28,14 @@ class ViewController: UIViewController {
         dateComponents.year = Int(year)
         
         let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "ru_Ru")
         dateFormatter.dateFormat = "EEEE"
         
         guard let date = calendar.date(from: dateComponents) else { return }
         let weekday = dateFormatter.string(from: date)
+        let capitalizedWeekday = weekday.capitalized
         
-        resultLabel.text = weekday
+        resultLabel.text = capitalizedWeekday
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
