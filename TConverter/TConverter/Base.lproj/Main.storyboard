@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="landscape" appearance="light"/>
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,20 +13,32 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="After_Noon" translatesAutoresizingMaskIntoConstraints="NO" id="yP6-zc-pzu">
-                                <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                                <rect key="frame" x="0.0" y="-44" width="320" height="558"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0ºC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bow-fM-mI6">
-                                <rect key="frame" x="393" y="118" width="58" height="42"/>
+                                <rect key="frame" x="131" y="163" width="58" height="42"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32ºF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="053-wv-PC6">
+                                <rect key="frame" x="124" y="275" width="72" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T-Converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="zVx-hL-an6">
+                                <rect key="frame" x="65.5" y="44" width="189" height="40"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ev8-UN-Ptx">
-                                <rect key="frame" x="288.66666666666669" y="180" width="267.00000000000006" height="31"/>
+                                <rect key="frame" x="26.5" y="225" width="267" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="263" id="KKz-wd-ZRD"/>
                                     <constraint firstAttribute="width" constant="263" id="Xy8-NZ-7ag"/>
@@ -54,18 +66,6 @@
                                     <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="h2r-lC-kMP"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32ºF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="053-wv-PC6">
-                                <rect key="frame" x="386" y="230" width="72" height="42"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T-Converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="zVx-hL-an6">
-                                <rect key="frame" x="571" y="20" width="213" height="40"/>
-                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -89,6 +89,9 @@
                             </constraint>
                             <constraint firstItem="bow-fM-mI6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UkE-gA-xAc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yP6-zc-pzu" secondAttribute="trailing" id="c9U-aM-tPh"/>
+                            <constraint firstItem="Ev8-UN-Ptx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="288" id="eaI-Ic-EbC">
+                                <variation key="heightClass=compact-widthClass=regular" constant="236"/>
+                            </constraint>
                             <constraint firstItem="zVx-hL-an6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="enG-Vy-Jec"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="yP6-zc-pzu" secondAttribute="top" constant="44" id="fme-pS-ovO"/>
                             <constraint firstItem="yP6-zc-pzu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jzs-ie-CeI"/>
@@ -115,6 +118,7 @@
                                 <exclude reference="LXK-Wr-Bgh"/>
                                 <exclude reference="MoW-6i-0WR"/>
                                 <exclude reference="O6Y-fa-FQz"/>
+                                <exclude reference="eaI-Ic-EbC"/>
                                 <exclude reference="sL9-SR-DO3"/>
                                 <exclude reference="yfO-NE-tWL"/>
                                 <exclude reference="0GF-z5-uEO"/>
@@ -138,6 +142,24 @@
                                 <include reference="wfB-KM-QUo"/>
                                 <include reference="LXK-Wr-Bgh"/>
                                 <include reference="MoW-6i-0WR"/>
+                                <include reference="yfO-NE-tWL"/>
+                                <include reference="0GF-z5-uEO"/>
+                                <include reference="TkG-Sy-lok"/>
+                                <include reference="y1V-9d-EWd"/>
+                                <include reference="J3y-D9-xqx"/>
+                                <include reference="prH-OD-qaT"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="1kT-Ne-HFB"/>
+                                <include reference="EiK-ZZ-UOH"/>
+                                <include reference="jzs-ie-CeI"/>
+                                <include reference="lur-lu-glq"/>
+                                <include reference="wfB-KM-QUo"/>
+                                <include reference="LXK-Wr-Bgh"/>
+                                <include reference="MoW-6i-0WR"/>
+                                <include reference="eaI-Ic-EbC"/>
                                 <include reference="yfO-NE-tWL"/>
                                 <include reference="0GF-z5-uEO"/>
                                 <include reference="TkG-Sy-lok"/>
@@ -171,7 +193,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135.96059113300493" y="85.599999999999994"/>
+            <point key="canvasLocation" x="135.32608695652175" y="85.507246376811594"/>
         </scene>
     </scenes>
     <resources>
