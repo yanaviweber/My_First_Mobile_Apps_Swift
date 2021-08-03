@@ -21,6 +21,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func sliderChanged(_ sender: UISlider) {
+        let temperatureCelsius = Int(round(sender.value))
+        cenliusLabel.text = "\(temperatureCelsius)ºC"
+        let fahrenheitTemperature = Int(round((sender.value * 9 / 5) + 32))
+        fahrenheitLabel.text = "\(fahrenheitTemperature)ºF"
     }
     
 }
