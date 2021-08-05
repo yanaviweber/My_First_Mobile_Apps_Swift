@@ -84,12 +84,18 @@
                                 <state key="normal" title="Go back">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="goBackTapped:" destination="XaY-Pv-4BB" eventType="touchUpInside" id="lfy-S6-LIn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cCo-eZ-Cff"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="kGd-G9-8cs"/>
+                    <connections>
+                        <outlet property="label" destination="B4Q-x4-0uN" id="Ey7-oi-T4a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jtu-3U-VOz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
