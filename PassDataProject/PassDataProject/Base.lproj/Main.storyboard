@@ -43,6 +43,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="XaY-Pv-4BB" kind="show" id="Fl4-rg-ef6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -56,7 +59,7 @@
         <!--View Controller-->
         <scene sceneID="QOY-DM-0ty">
             <objects>
-                <viewController id="XaY-Pv-4BB" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="XaY-Pv-4BB" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="90L-UV-ydD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,6 +84,7 @@
                         <viewLayoutGuide key="safeArea" id="cCo-eZ-Cff"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="kGd-G9-8cs"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jtu-3U-VOz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
