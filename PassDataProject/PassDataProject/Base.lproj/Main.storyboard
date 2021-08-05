@@ -44,6 +44,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dm9-WX-DcY"/>
                                     <segue destination="XaY-Pv-4BB" kind="show" id="Fl4-rg-ef6"/>
                                 </connections>
                             </button>
@@ -51,6 +52,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="loginTF" destination="5L5-aw-XQd" id="mte-QY-i3g"/>
+                        <outlet property="passwordTF" destination="msK-zZ-30m" id="tVv-0u-MTv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
