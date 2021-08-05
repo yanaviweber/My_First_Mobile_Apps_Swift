@@ -56,10 +56,10 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="69.642857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="QOY-DM-0ty">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="XaY-Pv-4BB" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="XaY-Pv-4BB" customClass="SecondViewController" customModule="PassDataProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="90L-UV-ydD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
