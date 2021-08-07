@@ -96,6 +96,13 @@
                                     <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dm9-WX-DcY"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6I-mB-BzW">
+                                <rect key="frame" x="90" y="571" width="234" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
@@ -214,12 +221,13 @@
                     <connections>
                         <outlet property="loginTF" destination="5L5-aw-XQd" id="mte-QY-i3g"/>
                         <outlet property="passwordTF" destination="msK-zZ-30m" id="tVv-0u-MTv"/>
+                        <outlet property="resultLabel" destination="d6I-mB-BzW" id="zcv-v2-4K0"/>
                         <segue destination="XaY-Pv-4BB" kind="show" identifier="detailSegue" id="LkL-Yt-wTC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="127.98913043478262" y="65.217391304347828"/>
+            <point key="canvasLocation" x="127.53623188405798" y="64.955357142857139"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="QOY-DM-0ty">
