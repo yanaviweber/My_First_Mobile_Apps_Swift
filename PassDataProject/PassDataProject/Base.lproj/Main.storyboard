@@ -282,11 +282,27 @@
                                     <action selector="goBackTapped:" destination="XaY-Pv-4BB" eventType="touchUpInside" id="lfy-S6-LIn"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4Q-x4-0uN">
-                                <rect key="frame" x="165.5" y="138" width="83" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4Q-x4-0uN">
+                                <rect key="frame" x="166" y="138" width="82.5" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="479" id="4np-0P-fX6"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="309" id="vqB-XG-sDZ">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="479"/>
+                                    </constraint>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4np-0P-fX6"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="4np-0P-fX6"/>
+                                    </mask>
+                                </variation>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cCo-eZ-Cff"/>
@@ -300,11 +316,11 @@
                             <constraint firstItem="B4Q-x4-0uN" firstAttribute="centerX" secondItem="cCo-eZ-Cff" secondAttribute="centerX" id="H33-15-oSW"/>
                             <constraint firstItem="94e-Gc-R2b" firstAttribute="top" secondItem="B4Q-x4-0uN" secondAttribute="bottom" constant="226" id="I1X-Ac-Fj4"/>
                             <constraint firstItem="94e-Gc-R2b" firstAttribute="top" secondItem="B4Q-x4-0uN" secondAttribute="bottom" constant="121" id="IfV-IZ-IBY">
-                                <variation key="heightClass=compact-widthClass=compact" constant="157"/>
+                                <variation key="heightClass=compact-widthClass=compact" constant="97"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="153"/>
                             </constraint>
                             <constraint firstItem="B4Q-x4-0uN" firstAttribute="top" secondItem="cCo-eZ-Cff" secondAttribute="top" constant="80" id="R54-AN-yds">
-                                <variation key="heightClass=compact-widthClass=compact" constant="44"/>
+                                <variation key="heightClass=compact-widthClass=compact" constant="49"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="48"/>
                             </constraint>
                             <constraint firstItem="B4Q-x4-0uN" firstAttribute="top" secondItem="cCo-eZ-Cff" secondAttribute="top" constant="188" id="VPf-4A-3CD">
@@ -371,7 +387,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jtu-3U-VOz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="793.75" y="69.375"/>
+            <point key="canvasLocation" x="791.19718309859161" y="67.5"/>
         </scene>
     </scenes>
     <resources>
