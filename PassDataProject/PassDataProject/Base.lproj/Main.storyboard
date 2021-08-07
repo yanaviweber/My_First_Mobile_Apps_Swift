@@ -288,7 +288,6 @@
                                 </variation>
                                 <connections>
                                     <action selector="goBackTapped:" destination="XaY-Pv-4BB" eventType="touchUpInside" id="lfy-S6-LIn"/>
-                                    <segue destination="4dt-1v-NfT" kind="unwind" unwindAction="unwindSegueToMainScreenWithSegue:" id="mgF-ly-I93"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4Q-x4-0uN">
@@ -392,6 +391,7 @@
                     <navigationItem key="navigationItem" id="kGd-G9-8cs"/>
                     <connections>
                         <outlet property="label" destination="B4Q-x4-0uN" id="Ey7-oi-T4a"/>
+                        <segue destination="4dt-1v-NfT" kind="unwind" identifier="unwindSegue" unwindAction="unwindSegueToMainScreenWithSegue:" id="4iP-kE-XsY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jtu-3U-VOz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
