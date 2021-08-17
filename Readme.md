@@ -90,6 +90,6 @@ after the received data in the first default screen (functionality for save this
 
 Stages of installing and displaying the mobile application here:
 
-1. `Upload and install Xcode in the official Apple website https://apps.apple.com/us/app/xcode/id497799835?mt=12`
-2. `Open the folder of the application and double click of the file with extension .xcodeproj`
-3. `Inside Xcode you have to run the simulator in the top panel (select device and click to "Run")`
+1. Upload and install Xcode in the official Apple [Xcode link](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
+2. Open the folder of the application and double click of the file with extension .xcodeproj
+3. Inside Xcode you have to run the simulator in the top panel (select device and click to "Run")
